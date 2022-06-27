@@ -8,40 +8,44 @@
     android:overScrollMode="never"
     android:padding="30dp"
     tools:context=".EnterMobileNum">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/SignUpBackButtton"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:padding="5dp"
-            android:src="@drawable/backarrow"/>
+            android:src="@drawable/backarrow" />
 
         <TextView
             android:id="@+id/SignUpTitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create Account"
-            android:textColor="@color/black"
-            android:textSize="40sp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/alata"
+            android:text="Create Account"
             android:textAllCaps="true"
-            android:layout_marginTop="20dp"/>
+            android:textColor="@color/black"
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="50dp"
+            android:fontFamily="@font/alata"
             android:text="Enter Mobile Number"
             android:textColor="#000000"
-            android:textSize="30sp"
-            android:layout_gravity="center"
-            android:fontFamily="@font/alata" />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -61,8 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
             android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
             android:background="@drawable/black_border"
             android:gravity="center"
             android:orientation="horizontal">
@@ -73,8 +77,8 @@
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="+91 "
                 android:paddingLeft="10dp"
+                android:text="+91 "
                 android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -85,12 +89,12 @@
                 android:layout_height="40dp"
                 android:layout_weight="1"
                 android:background="@null"
-                android:imeOptions="actionDone"
-                android:importantForAutofill="no"
-                android:paddingLeft="25dp"
                 android:ems="10"
                 android:hint="9988998899"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
                 android:inputType="phone"
+                android:paddingLeft="25dp"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -114,9 +118,11 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
         </FrameLayout>
     </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
