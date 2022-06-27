@@ -32,6 +32,8 @@ public class LoginPageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!validateFields()) {
+                    return;
+                }
 
 //
 //                //Get data
@@ -39,7 +41,7 @@ public class LoginPageActivity extends AppCompatActivity {
 //                _password = password.getEditText().getText().toString().trim();
 
                     //Database
-                    Query checkUser = FirebaseDatabase.getInstance().getReference("Users").orderByChild("mobileNumber").equalTo(_phoneNumber);
+                    Query checkUser = FirebaseDatabase.getInstance().getReference("Users").orderByChild("phoneNumber").equalTo(_phoneNumber);
 
                     checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
@@ -74,7 +76,7 @@ public class LoginPageActivity extends AppCompatActivity {
                             Toast.makeText(LoginPageActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
-                }
+
             }
         });
 
