@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "31435501048",
+    "project_id": "loginsignup-f53db",
+    "storage_bucket": "loginsignup-f53db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31435501048:android:a263d73ca331e11eb37a0d",
+        "android_client_info": {
+          "package_name": "com.example.loginsignup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31435501048-fmrfuu50aaican3ogj2pfeopa23btohl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loginsignup",
+            "certificate_hash": "53fe7b9047c0078b101b0ba17fddc1aa61fbe2ee"
+          }
+        },
+        {
+          "client_id": "31435501048-vh6d3oad6kb64mqnp43cj9mn3opm85mv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjMYYpEN9pD9g0nF0cpBvJP2qm_dwpttg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31435501048-vh6d3oad6kb64mqnp43cj9mn3opm85mv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
